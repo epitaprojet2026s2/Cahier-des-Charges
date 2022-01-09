@@ -7,10 +7,13 @@
 \usepackage[french]{babel}
 \usepackage{csquotes}
 \usepackage{lipsum}
-
+\usepackage{setspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage[nottoc]{tocbibind}
 \setlength{\emergencystretch}{2em}
+
+\usepackage{caption}
+\usepackage{subcaption}
 
 \usepackage[margin=25mm]{geometry} 
 \usepackage{graphicx}
@@ -70,21 +73,22 @@
 
 \include{title}
 
-\setlength{\parskip}{.5em} % Setter linjeavstander i TOC litt mindre
+\setlength{\parskip}{.5em}
 \cleardoublepage
 \tableofcontents
-\setlength{\parskip}{1em} % Går tilbake til standard avstand
+\setlength{\parskip}{1em} 
 \newpage
 
 \pagenumbering{arabic}
 
 %% SECTIONS %%
 \include{sections/introduction}
+\include{sections/membres}
 \include{sections/projet}
 \include{sections/parties}
 \include{sections/repartition}
-\include{sections/annexe}
 \include{sections/conclusion}
+\include{sections/annexe}
 
 %% FIN %%
 \end{document}
